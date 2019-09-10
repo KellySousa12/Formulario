@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html metacharset="UTF-8">
+<title> Formulário </title>
+<head>
+<link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+<form action="f1.html">
+
+<h2> Formulário de solicitação de passaporte </h2>
+<p class="nome">
+  <input type="text" id="nomeid" required="required" name="nome" onblur="forname(this.value);"/>
+  <label for="nome"> Nome Completo </label>
+
+</p>
+    <span id="nomeError"></span>
+
+<p class="endereco">
+  <input type="text" id="enderecoid" required="required" name="endereco" onblur="forendereco(this.value);"/>
+  <label for="endereco">Endereço</label>
+
+</p>
+  <span id="enderecoError"></span>
+
+<p class="cidade">
+  <input type="text" id="cidadeid" required="required"name="cidade" onblur="forcity(this.value);"/>
+  <label for="cidade"> Cidade </label>
+
+</p>
+    <span id="cidadeError"></span>
+
+<p class="uf">
+  <input type="text" id="Ufid" required="required" name="uf" onblur="forUf(this.value);"/>
+  <label for="uf"> UF </label>
+
+</p>
+    <span id="ufError"></span>
+
+<p class="telefoneResidencial">
+<input type="text" id="TelefoneResidencialid" required="required" name="Telefone Residencial"/>
+    <label for="Telefone Residencial"> Tel. Residencial </label>
+</p>
+   
+<p class="celular">
+<input type="text" id="Celularid" required="required" name="Celular" onblur="forcity(this.value);"/>
+        <label for="Celular"> Celular </label>
+    </p>
+    <span id="celularError"></span>
+
+<p class="email">
+<input type="text" id="Emailid" required="required" name="email" onblur="foremail(this.value);"/>
+      <label for="email"> E-mail </label>
+    </p>
+    <span id="emailError"></span>
+
+<p class="profissao">
+  <input type="text" id="Profissaoid" required="required" name="Profissao" onblur="forProfissao(this.value);"/>
+      <label for="Profissao"> Profissão </label>
+  </p>
+
+<span id="profissaoError"></span>
+
+</p>
+<p class="motivoSolicitacao"><br>
+  <label for="MotivoSolicitacao"> Motivo da Solicitação </label><br>
+<select>
+          <option value="trabalho">Trabalho</option>
+          <option value="turismo">Turismo</option>
+          <option value="estudo">Estudo</option>
+          <option value="sairdopais">Sair do País</option>
+        </select>
+          </p><br>
+
+<p class="Rg">
+          <input type="text" id="Rgid" required="required" name="Rg"/>
+          <label for="Rg"> RG </label>
+    </p>
+<p class="Cnh">
+          <input type="text" id="Cnhid" required="required" name="Cnh"/>
+          <label for="Cnh"> CNH </label>
+    </p>
+
+    </p>
+<p class="Cpf">
+          <input type="text" id="Cpfid" required="required" name="Cpf"/>
+          <label for="Cpf"> CPF </label><br>
+    
+    </p>
+<p class="títuloEleitor">
+          <input type="text" id="TítuloEleitorid" required="required" name="TítuloEleitor"/>
+          <label for="TítuloEleitor"> Título de Eleitor </label><br>
+    </p>
+<p class="PassAntigo"><br>
+    <label for="PassAntigo">Passaporte antigo?</label>
+    <br>
+        <input type="radio" name="webmaster" value="sim"/> Sim <br />
+        <input type="radio" name="webmaster" value="nao"/> Não <br />
+    </p>
+   
+<p class="NumPassaporte">
+    <input type="text" id="NumPassaporteid" required="required"/>
+    <label for="NumPassaporte"> Nº do Passaporte </label><br>
+    </p>
+
+<p class="submit">
+  <button onclick="Enviar();">Enviar</button>
+     </p>
+     
+</form>
+    <script src="MaskJS.js"></script>
+    <script src="Form.js"></script>
+ 
+</body>
+</html
